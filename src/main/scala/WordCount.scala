@@ -22,6 +22,8 @@ object WordCount{
 
     wordCount.foreach(println)
 
+    val output_file = input_file.map(l => l.split(" ")).collect()
+    output_file.foreach(println)
 
 
 

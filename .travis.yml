@@ -1,3 +1,6 @@
 language: scala
+
 scala:
    - 2.9.3
+
+ivyScala := ivyScala.value map { _.copy(overrideScalaVersion = true) }
